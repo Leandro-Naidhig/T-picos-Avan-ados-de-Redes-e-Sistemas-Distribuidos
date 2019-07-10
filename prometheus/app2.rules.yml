@@ -1,0 +1,20 @@
+groups:
+  - name: container_cpu
+    rules:
+      - record: container:container_cpu:avg_rate5m
+        expr: container_cpu_avg{name=~".+"}
+groups:
+  - name: container_memoria
+    rules:
+      - record: container:ncontainer_memoria
+        expr: container_memoria_bytes{name=~".+"}
+groups:
+  - name: container_rx
+    rules:
+      - record: container:container_rx:sum_rate5m
+        expr: sum by(id, nome) (rate(container_rx_bytes{name=~".+"}[5m]))
+groups:
+  - name: container_tx
+    rules:
+      - record: container:container_tx:sum_rate5m
+        expr: sum by(id, nome) (rate(container_tx_bytes{name=~".+"}[5m]))

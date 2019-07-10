@@ -1,0 +1,20 @@
+groups:
+  - name: vm_cpu
+    rules:
+      - record: vm:vm_cpu:avg_rate5m
+        expr: 100 - (avg by (vm) (irate(node_cpu_seconds_total{job="nodeexporter",mode="idle"}[5m])) * 100)
+groups:
+  - name: vm_memoria
+    rules:
+      - record: vm:vm_memoria
+        expr: node_memory_MemTotal_bytes - node_memory_MemFree_bytes - node_memory_Cached_bytes
+groups:
+  - name: vm_rx
+    rules:
+      - record: vm:vm_rx:avg_rate5m
+        expr: sum (irate(node_network_receive_bytes_total[5m])) by (vm)
+groups:
+  - name: vm_tx
+    rules:
+      - record: vm:vm_tx:avg_rate5m
+        expr: sum (irate(node_network_transmit_bytes_total[5m])) by (vm)
