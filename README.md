@@ -24,7 +24,7 @@ RA: 726594
 
 ### Decisões de Projeto
 
-Diante da proposta do trabalho, algumas decisões foram necessárias para seu desenvolvimento. Uma destas, foi a de utilizar o banco de dados InfluxDB, visto que este apresenta aparentemente mais simplicidade e contempla os pontos solicitados na descrição do trabalho. Além desta decisão, optamos em utilizar o Prometheus como ferramenta única para monitoração da infraestrutura, excluindo a possibilidade de utilizar a ferramenta Netdata. Para captar todos os dados necessários, optamos pela utilização das ferramentas cAdvisor e Node Exporter.
+Diante da proposta do trabalho, algumas decisões foram necessárias para seu desenvolvimento. Uma destas foi a de utilizar o banco de dados InfluxDB, visto que este apresenta, aparentemente, mais simplicidade e contempla os pontos solicitados na descrição do trabalho. Além desta decisão, optamos em utilizar o Prometheus como ferramenta única para monitoração da infraestrutura, excluindo a possibilidade de utilizar a ferramenta Netdata. Outra decisão tomada pelo grupo foi a de utilizar as ferramentas cAdvisor e Node Exporter para captar todos os dados necessários.
 
 ### Infraestutrura
 
