@@ -24,10 +24,12 @@ RA: 726594
 
 ### Decisões de Projeto
 
-
+Diante da proposta do trabalho, algumas decisões foram necessárias para seu desenvolvimento. Uma destas, foi a de utilizar o banco de dados InfluxDB, visto que este apresenta aparentemente mais simplicidade e contempla os pontos solicitados na descrição do trabalho. Além desta decisão, optamos em utilizar o Prometheus como ferramenta única para monitoração da infraestrutura, excluindo a possibilidade de utilizar a ferramenta Netdata. Para captar todos os dados necessários, optamos pela utilização das ferramentas cAdvisor e Node Exporter.
 
 ### Infraestutrura
 
 ![alt text](https://github.com/Leandro-Naidhig/Trabalho01-TARSD/blob/master/ArquiteturaTARSD-Final.jpg?raw=true)
 
 ### Dificuldades Encontradas
+
+Uma das dificuldades encontradas foi fazer a integração do banco de dados ao Prometheus. Em algumas situações, conseguíamos visualizar todas as métricas disponíveis, mas não apenas as métricas selecionadas. Para isto, procuramos conteúdos disponíveis na internet como documentos e vídeos explicando e exemplificando cenários semelhantes a posposta do trabalho. Além desta, enfrentamos a dificuldade de implementar junto a ferramentas (de certa forma, complexas) que não tínhamos familiaridade antes do curso.
