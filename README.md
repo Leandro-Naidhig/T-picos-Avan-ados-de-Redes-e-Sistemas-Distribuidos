@@ -36,7 +36,7 @@ Para monitoramentos dos containers e da infraestrutura, utilizamos o Prometheus 
 
 Desta forma, anexamos abaixo a figura macro do ambiente que utilizamos para a execução e realização da atividade proposta.
 
-![alt text](https://github.com/Leandro-Naidhig/Trabalho01-TARSD/blob/master/ArquiteturaTARSD-Final.jpg?raw=true)
+![alt text](https://github.com/Leandro-Naidhig/Trabalho01-TARSD/blob/master/ArquiteturaTARSD.jpg?raw=true)
 
 ### Dificuldades Encontradas
 
