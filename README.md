@@ -22,9 +22,13 @@ RA: 726594
 
 **Resumo:** Este documento tem o objetivo de relatar os passos elaborados e descrever o trabalho produzido na disciplina que aborda o tema de Cloud Network Slicing. Neste trabalho prático, foram desenvolvidos serviços segundo a infraestrutura prosposta que contempla a criação de três aplicações: tranferência de arquivo entre cliente e servidor; armazenamento das métricas dos containers; e armazenamentos das métricas das VMs. Utilizamos para tal desenvolvimento ferramentas como Vagrant, Docker Swarm, InfluxDB, Prometheus, entre outros citados abaixo. Informações sobre a infraestrutura montada, dificuldades encontradas e decisões de projeto estão presentes neste documento.
 
+----
+
 ### Decisões de Projeto
 
 Diante da proposta do trabalho, algumas decisões foram necessárias para seu desenvolvimento. Uma destas foi a de utilizar o banco de dados InfluxDB, visto que este apresenta, aparentemente, mais simplicidade e contempla os pontos solicitados na descrição do trabalho. Além desta decisão, optamos em utilizar o Prometheus como ferramenta única para monitoração da infraestrutura, excluindo a possibilidade de utilizar a ferramenta Netdata. Outra decisão tomada pelo grupo foi a de utilizar as ferramentas cAdvisor e Node Exporter para captar todos os dados necessários dos containers e das máquinas virtuais.
+
+----
 
 ### Infraestutrura
 
@@ -37,6 +41,8 @@ Para monitoramentos dos containers e da infraestrutura, utilizamos o Prometheus 
 Desta forma, anexamos abaixo a figura macro do ambiente que utilizamos para a execução e realização da atividade proposta.
 
 ![alt text](https://github.com/Leandro-Naidhig/Trabalho01-TARSD/blob/master/ArquiteturaTARSD.jpg?raw=true)
+
+----
 
 ### Dificuldades Encontradas
 
